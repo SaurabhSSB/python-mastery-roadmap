@@ -1,31 +1,29 @@
-# Input
-a= input("Enter the value:- ")# Don't forget to give input each time this code is executed 
-b= int(input("Only Integer else there will be an error:- "))
-c= float(input("Only Float else there will be an error:- "))
-
-# Output
-print(a)
-print(b+ c)
-print(5+2)
-print("Python")
-print(7,8.12,"Python ", sep= "-", end= "$")
-
-# Multiple Output
-print(a,7,8,6+5)
-
-# Comments - lines that will not be executed
-
-# Single- Line Comment
-
-''' 
-Multi- Line Comments used to comment multiple line,
-instead of using # each time. 
-'''
 """
-We can also use Double- Quoted- 
-Three- inverted- commas
+This script demonstrates various input and output operations in Python, including type-specific inputs,
+multiple outputs, comments, and escape sequence usage.
 """
 
-# Escape Sequence Character- For functions that normally cannot be used in strings
+def main() -> None:
+    """
+    Main function to execute the input-output demonstration.
+    """
+    # Input section
+    a: str = input("Enter the value: ")  # Prompt user for a string input
+    b: int = int(input("Enter an integer value: "))  # Prompt user for an integer input
+    c: float = float(input("Enter a float value: "))  # Prompt user for a float input
 
-print("This is for escape sequence\t \" We can use\" symbol too\n Escape Sequence")
+    # Output section
+    print(a)  # Print the string input
+    print(b + c)  # Print the sum of integer and float inputs
+    print(5 + 2)  # Print a simple arithmetic result
+    print("Python")  # Print a string
+    print(7, 8.12, "Python", sep="-", end="$\n")  # Print with custom separator and end character
+
+    # Multiple outputs in a single print statement
+    print(a, 7, 8, 6 + 5)  # Print mixed values in one line
+
+    # Escape Sequence Character Demonstration
+    print("This is for escape sequence\t \" We can use\" symbol too\n Escape Sequence")
+
+if __name__ == "__main__":
+    main()
