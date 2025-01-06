@@ -20,7 +20,7 @@ def main() -> None:
     print(7, 8.12, "Python", sep="-", end="$\n")  # Print with custom separator and end character
 
     # Multiple outputs in a single print statement
-    print(a, 7, 8, 6 + 5)  # Print mixed values in one line
+    print(a, 7, 8, 6 + 5,"S")  # Print mixed values in one line
 
     # Escape Sequence Character Demonstration
     print("This is for escape sequence\t \" We can use\" symbol too\n Escape Sequence")
